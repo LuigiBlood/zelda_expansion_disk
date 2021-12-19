@@ -1,0 +1,23 @@
+//Zelda 64 Dawn & Dusk - Expansion Disk
+//By LuigiBlood
+
+//Uses ARM9 bass
+
+//Virtual File Table (DMA Data equivalent)
+
+EZLJ_FILE_TABLE0:
+//File Count
+dw ((EZLJ_FILE_TABLE0_END - EZLJ_FILE_TABLE0 - 4) / 0x10)
+
+//Main Overlays
+n64dd_FileEntry(0x00BB11E0, DDHOOK_OVL_KALEIDO_SCOPE0, EZLJ_OVL_KALEIDO_SCOPE0.size, 0)
+n64dd_FileEntry(0x00BF40D0, DDHOOK_OVL_MAP_MARK_DATA0, EZLJ_OVL_MAP_MARK_DATA0.size, 0)
+n64dd_FileEntry(0x00E96370, DDHOOK_OVL_ENDTITLE0, EZLJ_OVL_ENDTITLE0.size, 0)
+n64dd_FileEntry(0x00E45450, DDHOOK_OVL_BG_JYA_BIGMIRROR0, EZLJ_OVL_BG_JYA_BIGMIRROR0.size, 0)
+
+EZLJ_FILE_TABLE0_END:
+namespace EZLJ_FILE_TABLE0 {
+    variable size = (EZLJ_FILE_TABLE0_END - EZLJ_FILE_TABLE0)
+}
+
+constant EZLJ_VFILE_TABLE_SIZE = (EZLJ_FILE_TABLE0.size)
