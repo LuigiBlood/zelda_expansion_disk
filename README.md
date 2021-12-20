@@ -3,12 +3,13 @@
 Original ROM Patch can be found here: https://github.com/ZethRyder/Disk-Expansion/releases
 
 ## Credits
+Original Mod:  
 - ZethN64
 - Sakura
 - Frostclaw (GCNOfficial/Shadow Fire)
 - Steve (ToCoool)
 
-64DD Porting
+64DD Porting:  
 - LuigiBlood
 
 # Compile
@@ -18,7 +19,9 @@ Original ROM Patch can be found here: https://github.com/ZethRyder/Disk-Expansio
 
 # How to play the Disk version
 - Download Project64 on 64DD.org.
-- Load 64DD Expansions with File -> Open Combo, then open the Base N64 game, then the Expansion Disk file.
+- Load 64DD Expansions with File -> Open Combo.
+  - Open a US / JP NTSC Retail Ocarina of Time ROM (All versions 1.0, 1.1 and 1.2 are supported).
+  - Open the Expansion Disk file.
 
 ### Fix Recompiler Crash
 
