@@ -26,7 +26,7 @@ n64dd_RamDefine(DDHOOK_STATICMAIN, 0)
 	n64dd_RamDefine(DDHOOK_VFILETABLE, EZLJ_VFILE_TABLE_SIZE)
 	
 	//Scene Room Buffers
-	n64dd_RamDefine(DDHOOK_SCENE_ROOM_TABLE, 0x100)					//ROOM POINTER TABLE
+	n64dd_RamDefine(DDHOOK_SCENE_ROOM_TABLE, 0x100+4)					//ROOM POINTER TABLE
 	n64dd_RamDefine(DDHOOK_SCENE_ROOM_DATA, 933344)					//ROOM DATA
 
 //805B5000-805FFFE0 = Frame Buffer something? Do not write there
