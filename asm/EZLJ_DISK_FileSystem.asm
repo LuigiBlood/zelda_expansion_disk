@@ -69,6 +69,42 @@ insert EZLJ_SCENE02_MAP13,"../scene/Inside Jabu-Jabu's Belly/room 13.zmap"
 insert EZLJ_SCENE02_MAP14,"../scene/Inside Jabu-Jabu's Belly/room 14.zmap"
 insert EZLJ_SCENE02_MAP15,"../scene/Inside Jabu-Jabu's Belly/room 15.zmap"
 
+insert EZLJ1_SCENE02,"../scene/Inside Jabu-Jabu's Belly [1.1]/Inside Jabu-Jabu's Belly.zscene"
+insert EZLJ1_SCENE02_MAP00,"../scene/Inside Jabu-Jabu's Belly [1.1]/room 0.zmap"
+insert EZLJ1_SCENE02_MAP01,"../scene/Inside Jabu-Jabu's Belly [1.1]/room 1.zmap"
+insert EZLJ1_SCENE02_MAP02,"../scene/Inside Jabu-Jabu's Belly [1.1]/room 2.zmap"
+insert EZLJ1_SCENE02_MAP03,"../scene/Inside Jabu-Jabu's Belly [1.1]/room 3.zmap"
+insert EZLJ1_SCENE02_MAP04,"../scene/Inside Jabu-Jabu's Belly [1.1]/room 4.zmap"
+insert EZLJ1_SCENE02_MAP05,"../scene/Inside Jabu-Jabu's Belly [1.1]/room 5.zmap"
+insert EZLJ1_SCENE02_MAP06,"../scene/Inside Jabu-Jabu's Belly [1.1]/room 6.zmap"
+insert EZLJ1_SCENE02_MAP07,"../scene/Inside Jabu-Jabu's Belly [1.1]/room 7.zmap"
+insert EZLJ1_SCENE02_MAP08,"../scene/Inside Jabu-Jabu's Belly [1.1]/room 8.zmap"
+insert EZLJ1_SCENE02_MAP09,"../scene/Inside Jabu-Jabu's Belly [1.1]/room 9.zmap"
+insert EZLJ1_SCENE02_MAP10,"../scene/Inside Jabu-Jabu's Belly [1.1]/room 10.zmap"
+insert EZLJ1_SCENE02_MAP11,"../scene/Inside Jabu-Jabu's Belly [1.1]/room 11.zmap"
+insert EZLJ1_SCENE02_MAP12,"../scene/Inside Jabu-Jabu's Belly [1.1]/room 12.zmap"
+insert EZLJ1_SCENE02_MAP13,"../scene/Inside Jabu-Jabu's Belly [1.1]/room 13.zmap"
+insert EZLJ1_SCENE02_MAP14,"../scene/Inside Jabu-Jabu's Belly [1.1]/room 14.zmap"
+insert EZLJ1_SCENE02_MAP15,"../scene/Inside Jabu-Jabu's Belly [1.1]/room 15.zmap"
+
+insert EZLJ2_SCENE02,"../scene/Inside Jabu-Jabu's Belly [1.2]/Inside Jabu-Jabu's Belly.zscene"
+insert EZLJ2_SCENE02_MAP00,"../scene/Inside Jabu-Jabu's Belly [1.2]/room 0.zmap"
+insert EZLJ2_SCENE02_MAP01,"../scene/Inside Jabu-Jabu's Belly [1.2]/room 1.zmap"
+insert EZLJ2_SCENE02_MAP02,"../scene/Inside Jabu-Jabu's Belly [1.2]/room 2.zmap"
+insert EZLJ2_SCENE02_MAP03,"../scene/Inside Jabu-Jabu's Belly [1.2]/room 3.zmap"
+insert EZLJ2_SCENE02_MAP04,"../scene/Inside Jabu-Jabu's Belly [1.2]/room 4.zmap"
+insert EZLJ2_SCENE02_MAP05,"../scene/Inside Jabu-Jabu's Belly [1.2]/room 5.zmap"
+insert EZLJ2_SCENE02_MAP06,"../scene/Inside Jabu-Jabu's Belly [1.2]/room 6.zmap"
+insert EZLJ2_SCENE02_MAP07,"../scene/Inside Jabu-Jabu's Belly [1.2]/room 7.zmap"
+insert EZLJ2_SCENE02_MAP08,"../scene/Inside Jabu-Jabu's Belly [1.2]/room 8.zmap"
+insert EZLJ2_SCENE02_MAP09,"../scene/Inside Jabu-Jabu's Belly [1.2]/room 9.zmap"
+insert EZLJ2_SCENE02_MAP10,"../scene/Inside Jabu-Jabu's Belly [1.2]/room 10.zmap"
+insert EZLJ2_SCENE02_MAP11,"../scene/Inside Jabu-Jabu's Belly [1.2]/room 11.zmap"
+insert EZLJ2_SCENE02_MAP12,"../scene/Inside Jabu-Jabu's Belly [1.2]/room 12.zmap"
+insert EZLJ2_SCENE02_MAP13,"../scene/Inside Jabu-Jabu's Belly [1.2]/room 13.zmap"
+insert EZLJ2_SCENE02_MAP14,"../scene/Inside Jabu-Jabu's Belly [1.2]/room 14.zmap"
+insert EZLJ2_SCENE02_MAP15,"../scene/Inside Jabu-Jabu's Belly [1.2]/room 15.zmap"
+
 insert EZLJ_SCENE03,"../scene/Forest Temple/Forest Temple.zscene"
 insert EZLJ_SCENE03_MAP00,"../scene/Forest Temple/room 0.zmap"
 insert EZLJ_SCENE03_MAP01,"../scene/Forest Temple/room 1.zmap"
@@ -270,12 +306,12 @@ insert EZLJ_NES_MESSAGE_TABLE,"../text/MessageTableNES.tbl"
 insert EZLJ_NES_MESSAGE_DATA_STATIC,"../text/StringDataNES.bin"
 insert EZLJ_JPN_MESSAGE_TABLE,"../text/MessageTableJPN.tbl"
 insert EZLJ_JPN_MESSAGE_DATA_STATIC,"../text/StringDataJPN.bin"
-
-//Scene Table
-include "EZLJ_DISK_SceneList.asm"
-
 EZLJ_DISK_FS_STATICMAIN_END:
 constant EZLJ_DISK_FS_STATICMAIN_SIZE = (EZLJ_DISK_FS_STATICMAIN_END-EZLJ_DISK_FS_STATICMAIN_START)
+
+//Scene Table
+n64dd_Align(16)
+include "EZLJ_DISK_SceneList.asm"
 
 //Virtual File Table Replacement & Patch for each game version
 n64dd_Align(16)

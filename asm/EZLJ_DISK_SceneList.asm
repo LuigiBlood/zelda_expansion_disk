@@ -32,3 +32,33 @@ EZLJ_SCENELIST: {
 }
 EZLJ_SCENELIST_END:
 constant EZLJ_SCENELIST_SIZE = (EZLJ_SCENELIST_END - EZLJ_SCENELIST)
+
+EZLJ1_SCENELIST: {
+	n64dd_SceneEntry("Deku Tree",					EZLJ_SCENE00, CZLJ_SCENETITLE00,	0x01, 0x13, 0x00)
+	n64dd_SceneEntry("Dodongo's Cavern",			EZLJ_SCENE01, CZLJ_SCENETITLE01,	0x01, 0x14, 0x01)
+	n64dd_SceneEntry("Inside Jabu-Jabu's Belly",	EZLJ1_SCENE02, CZLJ_SCENETITLE02,	0x01, 0x15, 0x02)
+	n64dd_SceneEntry("Forest Temple",				EZLJ_SCENE03, CZLJ_SCENETITLE03,	0x02, 0x16, 0x03)
+	n64dd_SceneEntry("Fire Temple",					EZLJ_SCENE04, CZLJ_SCENETITLE04,	0x02, 0x12, 0x04)
+	n64dd_SceneEntry("Water Temple",				EZLJ_SCENE05, CZLJ_SCENETITLE05,	0x01, 0x17, 0x05)
+	n64dd_SceneEntry("Spirit Temple",				EZLJ_SCENE06, CZLJ_SCENETITLE06,	0x01, 0x19, 0x06)
+	n64dd_SceneEntry("Shadow Temple",				EZLJ_SCENE07, CZLJ_SCENETITLE07,	0x02, 0x18, 0x07)
+	n64dd_SceneEntry("Bottom of the Well",			EZLJ_SCENE08, CZLJ_SCENETITLE08,	0x02, 0x18, 0x08)
+	n64dd_SceneEntry("Ice Cavern",					EZLJ_SCENE09, CZLJ_SCENETITLE09,	0x00, 0x25, 0x09)
+	n64dd_SceneEntry("Gerudo Training Ground",		EZLJ_SCENE0B, CZLJ_SCENETITLE0B,	0x00, 0x1B, 0x0B)
+	n64dd_SceneEntry("Inside Ganon's Castle",		EZLJ_SCENE0D, CZLJ_SCENETITLE0D,	0x00, 0x1A, 0x0D)
+}
+
+EZLJ2_SCENELIST: {
+	n64dd_SceneEntry("Deku Tree",					EZLJ_SCENE00, CZLJ_SCENETITLE00,	0x01, 0x13, 0x00)
+	n64dd_SceneEntry("Dodongo's Cavern",			EZLJ_SCENE01, CZLJ_SCENETITLE01,	0x01, 0x14, 0x01)
+	n64dd_SceneEntry("Inside Jabu-Jabu's Belly",	EZLJ2_SCENE02, CZLJ_SCENETITLE02,	0x01, 0x15, 0x02)
+	n64dd_SceneEntry("Forest Temple",				EZLJ_SCENE03, CZLJ_SCENETITLE03,	0x02, 0x16, 0x03)
+	n64dd_SceneEntry("Fire Temple",					EZLJ_SCENE04, CZLJ_SCENETITLE04,	0x02, 0x12, 0x04)
+	n64dd_SceneEntry("Water Temple",				EZLJ_SCENE05, CZLJ_SCENETITLE05,	0x01, 0x17, 0x05)
+	n64dd_SceneEntry("Spirit Temple",				EZLJ_SCENE06, CZLJ_SCENETITLE06,	0x01, 0x19, 0x06)
+	n64dd_SceneEntry("Shadow Temple",				EZLJ_SCENE07, CZLJ_SCENETITLE07,	0x02, 0x18, 0x07)
+	n64dd_SceneEntry("Bottom of the Well",			EZLJ_SCENE08, CZLJ_SCENETITLE08,	0x02, 0x18, 0x08)
+	n64dd_SceneEntry("Ice Cavern",					EZLJ_SCENE09, CZLJ_SCENETITLE09,	0x00, 0x25, 0x09)
+	n64dd_SceneEntry("Gerudo Training Ground",		EZLJ_SCENE0B, CZLJ_SCENETITLE0B,	0x00, 0x1B, 0x0B)
+	n64dd_SceneEntry("Inside Ganon's Castle",		EZLJ_SCENE0D, CZLJ_SCENETITLE0D,	0x00, 0x1A, 0x0D)
+}
