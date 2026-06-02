@@ -188,7 +188,6 @@ macro n64dd_dprintf_num(addr) {
 }
 
 //Table Entry Macros
-variable EZLJ_SCENELIST_COUNT = 0
 inline n64dd_SceneEntry(name, scenestart, titlestart, unk0, renderinit, dd) {
 	dw ({scenestart}), ({scenestart} + {scenestart}.size)
 	if {titlestart} != 0 {
@@ -201,7 +200,6 @@ inline n64dd_SceneEntry(name, scenestart, titlestart, unk0, renderinit, dd) {
 	//Extra Info (Offset 0x18)
 	dw 0,0
 
-	EZLJ_SCENELIST_COUNT = EZLJ_SCENELIST_COUNT + 1
 }
 
 inline n64dd_RoomEntry(roomstart) {
